@@ -1,0 +1,127 @@
+body {
+    background-color: blanchedalmond;
+}
+
+h1 {
+    text-align: center;
+}
+
+#login {
+    text-align: center;
+    /* border: 1px solid black; */
+    margin-bottom: 10px;
+}
+
+legend {
+    margin-left: 5px;
+}
+
+fieldset {
+    margin: auto;
+    width: 150px;
+    text-align: center;
+}
+
+#submit {
+    margin: 5px;
+}
+
+#left,
+#right {
+    height: 80%;
+}
+
+#left {
+    width: 30%;
+    float: left;
+    background: #b3c0e8;
+}
+
+#right {
+    width: 69.22%;
+    float: right;
+    background: #c2e9ab;
+}
+
+#leftTitle {
+    text-align: center;
+    font-weight: 600;
+    font-size: large;
+    border-bottom: 2px solid black;
+    padding: 10px;
+}
+
+#leftContent {
+    /* white-space: nowrap; */
+    text-align: center;
+    font-weight: 600;
+    font-size: large;
+    padding: 10px;
+
+    height: 530px;
+    overflow-x: auto;
+    scroll-snap-type: y;
+}
+
+.user {
+    margin: 5px 5px;
+    padding: 5px;
+    border: 1px solid black;
+    background: lightgoldenrodyellow;
+}
+
+#modify {
+    text-align: right;
+    font-weight: bold;
+    margin: 5px;
+}
+
+#messages {
+    height: 90%;
+    width: 98%;
+    border: 2px solid black;
+    margin: 5px;
+
+    height: 90%;
+    overflow-x: auto;
+    scroll-snap-type: y;
+}
+
+#message {
+    width: 90%;
+    margin-left: 5px;
+}
+
+#btnSend {
+    width: 7%;
+}
+
+#you {
+    border-bottom: 1px solid black;
+}
+
+.your-message {
+    text-align: right;
+    margin: 10px;
+    border-bottom: 1px solid lightslategrey;
+}
+
+.other-message {
+    margin: 10px;
+    text-align: left;
+    border-bottom: 1px solid lightslategrey;
+}
+/* 
+.your-mess-content {
+    width: 40%;
+    padding: 5px;
+    float: right;
+    border: 1px solid black;
+}
+
+.other-mess-content {
+    width: 40%;
+    padding: 5px;
+    float: left;
+    border: 1px solid black;
+} */

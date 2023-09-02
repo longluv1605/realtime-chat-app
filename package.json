@@ -1,0 +1,29 @@
+{
+    "name": "realtime-chat-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/server.js",
+    "scripts": {
+        "start": "nodemon src/server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/longluv1605/realtime-chat-app.git"
+    },
+    "author": "Long",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/longluv1605/realtime-chat-app/issues"
+    },
+    "homepage": "https://github.com/longluv1605/realtime-chat-app#readme",
+    "dependencies": {
+        "dotenv": "^16.3.1",
+        "ejs": "^3.1.9",
+        "express": "^4.18.2",
+        "pg": "^8.11.3",
+        "socket.io": "^4.7.2"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1"
+    }
+}
