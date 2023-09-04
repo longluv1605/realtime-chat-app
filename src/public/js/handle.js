@@ -5,7 +5,7 @@ socket.on("server-submit-failed", () => {
 });
 
 socket.on("server-send-online-users", (data) => {
-    $("#leftContent").html("");
+    $("#leftContent").html('');
     for (const user of data) {
         if (user.id != socket.id) {
             // alert(socket.username);
@@ -33,13 +33,14 @@ socket.on("new-message", (message) => {
 
 $(document).ready(() => {
     $("#login").show();
-    // $("#chatbox").hide();
+    $("#chatbox").hide();
 
     $("#submit").click(() => {
         socket.emit("client-submit-username", {
             username: $("#text-username").val(),
             id: socket.id,
         });
+        $("#text-username").val('');
     });
 
     $("#logout").click(() => {
@@ -52,6 +53,7 @@ $(document).ready(() => {
         const message = $("#message").val();
         if (message) {
             socket.emit("send-message", message);
+            $("#message").val('');
         }
     });
 });

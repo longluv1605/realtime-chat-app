@@ -39,7 +39,15 @@ io.on("connection", (socket) => {
     });
 
     socket.on("logout", () => {
-        const index = listUsers.indexOf((user) => user.id === socket.id);
+        const index = listUsers.indexOf((user) => user.username === socket.username);
+        listUsers.splice(index, 1);
+        socket.username = undefined;
+        io.sockets.emit("server-send-online-users", listUsers);
+    });
+
+    socket.on("disconnect", () => {
+        console.log(socket.id + "disconnected");
+        const index = listUsers.indexOf((user) => user.username === socket.username);
         listUsers.splice(index, 1);
         socket.username = undefined;
         io.sockets.emit("server-send-online-users", listUsers);
